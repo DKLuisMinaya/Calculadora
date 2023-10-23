@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #888;
+        }
+
+        .result {
+            text-align: right;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .btn-row {
+            display: flex;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="result" id="result">0</div>
+        <div class="btn-row" >
+            <div class="btn" onclick="appendToResult('7')">7</div>
+            <div class="btn" onclick="appendToResult('8')">8</div>
+            <div class="btn" onclick="appendToResult('9')">9</div>
+            <div class="btn" onclick="appendToResult('/')">/</div>
+        </div>
+        <div class="btn-row">
+            <div class="btn" onclick="appendToResult('4')">4</div>
+            <div class="btn" onclick="appendToResult('5')">5</div>
+            <div class="btn" onclick="appendToResult('6')">6</div>
+            <div class="btn" onclick="appendToResult('*')">*</div>
+        </div>
+        <div class="btn-row">
+            <div class="btn" onclick="appendToResult('1')">1</div>
+            <div class="btn" onclick="appendToResult('2')">2</div>
+            <div class="btn" onclick="appendToResult('3')">3</div>
+            <div class="btn" onclick="appendToResult('-')">-</div>
+        </div>
+        <div class="btn-row">
+            <div class="btn" onclick="clearResult()">C</div>
+            <div class="btn" onclick="appendToResult('0')">0</div>
+            <div class="btn" onclick="calculateResult()">=</div>
+            <div class="btn" onclick="appendToResult('+')">+</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
