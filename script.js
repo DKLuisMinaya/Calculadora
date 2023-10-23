@@ -18,3 +18,9 @@ function multiplicacion(){
     multiplicacion = parseInt(a.value)*parseInt(b.value);
     r.innerHTML=multiplicacion;
 }
+
+function division(){
+    let division = 0;
+    division = parseInt(a.value) / parseInt(b.value);
+    r.innerHTML=division;
+}
