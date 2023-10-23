@@ -6,3 +6,10 @@ function suma(){
     suma = parseInt (a.value) + parseInt(b.value);
     r.innerHTML=suma;
 }
+
+function resta(){
+    let resta = 0;
+    resta = parseInt(a.value)- parseInt(b.value);
+    r.innerHTML=resta;
+}
+
