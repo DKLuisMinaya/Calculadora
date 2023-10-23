@@ -13,3 +13,8 @@ function resta(){
     r.innerHTML=resta;
 }
 
+function multiplicacion(){
+    let multiplicacion = 0;
+    multiplicacion = parseInt(a.value)*parseInt(b.value);
+    r.innerHTML=multiplicacion;
+}
